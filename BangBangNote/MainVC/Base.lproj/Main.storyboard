@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wTV-o9-LjF">
-                        <barButtonItem key="rightBarButtonItem" image="btn_Edit" id="rp4-Nk-aBa">
+                        <barButtonItem key="rightBarButtonItem" image="btn_Setting" id="rp4-Nk-aBa">
                             <color key="tintColor" name="App_Main_Color"/>
                             <connections>
                                 <segue destination="up1-K1-NpT" kind="show" id="mdR-6h-lV6"/>
@@ -66,20 +66,20 @@
             </objects>
             <point key="canvasLocation" x="-2175" y="-107"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SettingVC-->
         <scene sceneID="AFQ-HZ-LG3">
             <objects>
-                <viewControllerPlaceholder id="up1-K1-NpT" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SettingStoryboard" referencedIdentifier="SettingVC" id="up1-K1-NpT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7m0-d9-Ffj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-725" y="-178"/>
         </scene>
     </scenes>
     <resources>
-        <image name="btn_Edit" width="30" height="30"/>
+        <image name="btn_Setting" width="30" height="30"/>
         <image name="icon-Logo" width="1024" height="1024"/>
         <namedColor name="App_Main_Color">
-            <color red="0.39215686274509803" green="0.12941176470588237" blue="0.0" alpha="0.72000002861022949" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.60392156862745094" green="0.49803921568627452" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

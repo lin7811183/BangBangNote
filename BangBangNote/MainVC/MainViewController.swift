@@ -5,29 +5,26 @@ class MainViewController: BaseViewController {
     
     @IBOutlet weak var appLogoImageView: UIImageView!
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set default View.
-        self.defaultSetView()
-        
-        // Set VC View.
+        self.setNavigationItemTitle(style: .logo, title: nil)
         self.setView()
     }
     
-    // MARK: Set VC View.
+    // MARK: Set view.
     override func setView() {
         self.logoAnimation()
     }
     
-    // MARK: Logo Animation.
+    // MARK: Logo animation.
     private func logoAnimation() {
         UIView.animate(withDuration: 1.5,
                        delay: 0.5,
                        options: [.curveEaseInOut],
                        animations: {
-                        self.appLogoImageView.image = nil
-        }, completion: nil)
+                        self.appLogoImageView.image = nil },
+                       completion: nil)
     }
     
 }
